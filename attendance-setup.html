@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Setup</title>
+    <!-- Link the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page container" id="attendanceSetupPage">
+        <h2>Attendance Setup</h2>
+        <label for="year">Select Year:</label>
+        <select id="year">
+            <option value="FY">FY</option>
+            <option value="SY">SY</option>
+            <option value="TY">TY</option>
+        </select>
+
+        <label for="subject">Select Subject:</label>
+        <select id="subject">
+            <option value="NLP">NLP</option>
+            <option value="DE">DE</option>
+            <option value="IPR">IPR</option>
+        </select>
+
+        <label for="numStudents">Number of Students in class:</label>
+        <input type="text" id="numStudents" placeholder="Type">
+
+        <button onclick="setAttendance()">Take Attendance</button>
+    </div>
+
+    <!-- Link the external JS file -->
+    <script src="script.js"></script>
+</body>
+</html>
